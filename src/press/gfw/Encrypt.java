@@ -596,7 +596,7 @@ public class Encrypt {
 
 		} catch (InvalidKeyException | InvalidAlgorithmParameterException ex) {
 
-			log("初始化Cipher出错：");
+			log(String.format("初始化Cipher出错：key %s",key.toString()));
 
 			ex.printStackTrace();
 
